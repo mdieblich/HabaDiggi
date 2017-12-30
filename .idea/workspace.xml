@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/test/java/com/dieblich/handball/gatecom/ReadGatecomFileSteps.java" line="20" />
+    <bookmark url="file://$PROJECT_DIR$/src/test/java/com/dieblich/handball/gatecom/ReadGatecomFileSteps.java" line="22" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="added first failing cucumber tests for reading GatecomFiles">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dieblich/handball/habaDiggiGui/EditGameParticipantsWindow.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dieblich/handball/habaDiggiGui/EditTeamScene.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dieblich/handball/habaDiggiGui/ChooseGameWindow.java" afterPath="$PROJECT_DIR$/src/main/java/com/dieblich/handball/habaDiggiGui/ChooseGameWindow.java" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="read Gatecom-Files in ANSI-Format (CodePage 1252)">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dieblich/handball/gatecom/GatecomException.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dieblich/handball/gatecom/GatecomFile.java" afterPath="$PROJECT_DIR$/src/main/java/com/dieblich/handball/gatecom/GatecomFile.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dieblich/handball/gatecom/GatecomGame.java" afterPath="$PROJECT_DIR$/src/main/java/com/dieblich/handball/gatecom/GatecomGame.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dieblich/handball/gatecom/ReadGatecomFile.feature" afterPath="$PROJECT_DIR$/src/test/java/com/dieblich/handball/gatecom/ReadGatecomFile.feature" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dieblich/handball/gatecom/ReadGatecomFileSteps.java" afterPath="$PROJECT_DIR$/src/test/java/com/dieblich/handball/gatecom/ReadGatecomFileSteps.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,8 +75,8 @@
       <file leaf-file-name="ReadGatecomFile.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/dieblich/handball/gatecom/ReadGatecomFile.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+            <state relative-caret-position="0">
+              <caret line="0" column="16" lean-forward="true" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -82,24 +85,33 @@
       <file leaf-file-name="ReadGatecomFileSteps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/dieblich/handball/gatecom/ReadGatecomFileSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+            <state relative-caret-position="261">
+              <caret line="45" column="33" lean-forward="false" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
               <folding>
-                <element signature="e#399#400#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
-                <element signature="e#535#536#0" expanded="true" />
-                <element signature="e#592#593#0" expanded="true" />
+                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#530#531#0" expanded="true" />
+                <element signature="e#766#767#0" expanded="true" />
+                <element signature="e#821#822#0" expanded="true" />
+                <element signature="e#1532#1533#0" expanded="true" />
+                <element signature="e#1597#1598#0" expanded="true" />
+                <element signature="e#1704#1705#0" expanded="true" />
+                <element signature="e#1771#1772#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerLicense.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/handball/materials/PlayerLicense.java">
+      <file leaf-file-name="GatecomException.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/handball/gatecom/GatecomException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="153">
+              <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+              <folding>
+                <element signature="e#143#144#0" expanded="true" />
+                <element signature="e#167#168#0" expanded="true" />
+                <element signature="e#216#217#0" expanded="true" />
+                <element signature="e#243#244#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,11 +119,17 @@
       <file leaf-file-name="GatecomGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/handball/gatecom/GatecomGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding>
-                <element signature="e#99#100#0" expanded="true" />
-                <element signature="e#124#125#0" expanded="true" />
+                <element signature="e#157#158#0" expanded="true" />
+                <element signature="e#187#188#0" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#264#265#0" expanded="true" />
+                <element signature="e#299#300#0" expanded="true" />
+                <element signature="e#330#331#0" expanded="true" />
+                <element signature="e#371#372#0" expanded="true" />
+                <element signature="e#411#412#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,46 +138,11 @@
       <file leaf-file-name="GatecomFile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/handball/gatecom/GatecomFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-              <folding>
-                <element signature="e#141#142#0" expanded="true" />
-                <element signature="e#181#182#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditGameParticipantsWindow.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/handball/habaDiggiGui/EditGameParticipantsWindow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="52" lean-forward="true" selection-start-line="25" selection-start-column="52" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditTeamScene.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/handball/habaDiggiGui/EditTeamScene.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Observable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/observability/Observable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -247,13 +230,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/dieblich/handball/materials/Player.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dieblich/com/dieblich/handball/gatecom/GateComGameFileTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dieblich/com/dieblich/handball/gatecom/ReadGatecomFile.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dieblich/handball/gatecom/ReadGatecomFileSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dieblich/handball/gatecom/ReadGatecomFile.feature" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dieblich/handball/gatecom/GatecomGame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dieblich/handball/gatecom/GatecomFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dieblich/handball/habaDiggiGui/EditGameParticipantsWindow.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dieblich/handball/habaDiggiGui/EditTeamScene.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dieblich/observability/Observable.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dieblich/handball/gatecom/ReadGatecomFile.feature" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dieblich/handball/gatecom/GatecomGame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dieblich/handball/gatecom/GatecomFile.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dieblich/handball/gatecom/ReadGatecomFileSteps.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dieblich/handball/gatecom/GatecomException.java" />
       </list>
     </option>
   </component>
@@ -384,9 +368,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -443,15 +424,6 @@
               <item name="HabaDiggi" type="b2602c69:ProjectViewProjectNode" />
               <item name="HabaDiggi" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dieblich" type="462c0819:PsiDirectoryNode" />
-              <item name="observability" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HabaDiggi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HabaDiggi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -490,31 +462,15 @@
             </path>
             <path>
               <item name="HabaDiggi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HabaDiggi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dieblich" type="462c0819:PsiDirectoryNode" />
-              <item name="handball" type="462c0819:PsiDirectoryNode" />
-              <item name="materials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HabaDiggi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HabaDiggi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dieblich" type="462c0819:PsiDirectoryNode" />
-              <item name="observability" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HabaDiggi" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -549,16 +505,17 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Martin\IdeaProjects\HabaDiggi\src\main\java" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.dieblich.handball.materials" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Martin\IdeaProjects\HabaDiggi\src\main\java" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Martin\IdeaProjects\HabaDiggi\src\main\java" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.dieblich.handball.gatecom" />
       <recent name="com.dieblich.handball.terms" />
       <recent name="com.dieblich.handball.materials" />
     </key>
@@ -575,7 +532,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: LigaKey Extraction">
+  <component name="RunManager" selected="Cucumber java.Feature: ReadGatecomFile">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="HTML_USED" value="false" />
@@ -617,6 +574,29 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="Feature: ReadGatecomFile" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/java/com/dieblich/handball/gatecom/ReadGatecomFile.feature" />
+      <option name="GLUE" value="com.dieblich.handball.gatecom" />
+      <option name="myNameFilter" value="" />
+      <option name="myGeneratedName" value="Feature: ReadGatecomFile" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="HabaDiggi" />
       <envs />
     </configuration>
     <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
@@ -710,31 +690,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.dieblich.handball.materials.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="HabaDiggi" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.dieblich.handball.materials" />
-      <option name="MAIN_CLASS_NAME" value="com.dieblich.handball.materials.TeamTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -810,18 +765,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.All in HabaDiggi" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TeamTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PlayerTest" />
-      <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: " />
-      <item index="5" class="java.lang.String" itemvalue="Cucumber java.Scenario: LigaKey Extraction" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.PlayerTest" />
+      <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: " />
+      <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: LigaKey Extraction" />
+      <item index="5" class="java.lang.String" itemvalue="Cucumber java.Feature: ReadGatecomFile" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: LigaKey Extraction" />
-        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: " />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PlayerTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in HabaDiggi" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TeamTest" />
+        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Feature: ReadGatecomFile" />
+        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: LigaKey Extraction" />
+        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: " />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PlayerTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.All in HabaDiggi" />
       </list>
     </recent_temporary>
   </component>
@@ -900,32 +855,32 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PlayerTest - 2017.10.03 at 21h 37m 43s.xml">
-      <configuration name="PlayerTest" configurationId="JUnit" />
+    <history-entry file="Feature__ReadGatecomFile - 2017.12.29 at 15h 28m 12s.xml">
+      <configuration name="Feature: ReadGatecomFile" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__ - 2017.12.29 at 14h 28m 15s.xml">
-      <configuration name="Scenario: " configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__ReadGatecomFile - 2017.12.29 at 15h 28m 20s.xml">
+      <configuration name="Feature: ReadGatecomFile" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__LigaKey_Extraction - 2017.12.29 at 14h 28m 42s.xml">
+    <history-entry file="Feature__ReadGatecomFile - 2017.12.30 at 18h 20m 17s.xml">
+      <configuration name="Feature: ReadGatecomFile" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__ReadGatecomFile - 2017.12.30 at 18h 22m 01s.xml">
+      <configuration name="Feature: ReadGatecomFile" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__ReadGatecomFile - 2017.12.30 at 18h 26m 38s.xml">
+      <configuration name="Feature: ReadGatecomFile" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__ReadGatecomFile - 2017.12.30 at 18h 27m 59s.xml">
+      <configuration name="Feature: ReadGatecomFile" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__LigaKey_Extraction - 2017.12.29 at 14h 51m 35s.xml">
       <configuration name="Scenario: LigaKey Extraction" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__LigaKey_Extraction - 2017.12.29 at 14h 29m 12s.xml">
+    <history-entry file="Scenario__LigaKey_Extraction - 2017.12.29 at 15h 18m 10s.xml">
       <configuration name="Scenario: LigaKey Extraction" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TeamTest - 2017.10.03 at 19h 52m 53s.xml">
-      <configuration name="TeamTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeamTest - 2017.10.03 at 19h 53m 01s.xml">
-      <configuration name="TeamTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeamTest - 2017.10.03 at 19h 56m 17s.xml">
-      <configuration name="TeamTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeamTest - 2017.10.03 at 19h 57m 21s.xml">
-      <configuration name="TeamTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeamTest_noPlayerIsDoubled - 2017.10.03 at 19h 52m 20s.xml">
-      <configuration name="TeamTest.noPlayerIsDoubled" configurationId="JUnit" />
+    <history-entry file="Scenario__LigaKey_Extraction - 2017.12.29 at 15h 30m 05s.xml">
+      <configuration name="Scenario: LigaKey Extraction" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
     <history-entry file="TeamTest_noPlayerIsDoubled - 2017.10.03 at 19h 52m 57s.xml">
       <configuration name="TeamTest.noPlayerIsDoubled" configurationId="JUnit" />
@@ -945,7 +900,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -961,7 +915,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20729166" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -998,14 +952,15 @@
     <MESSAGE value="added Team" />
     <MESSAGE value="modified Player: added BirthDate, License and Number" />
     <MESSAGE value="added first failing cucumber tests for reading GatecomFiles" />
-    <option name="LAST_COMMIT_MESSAGE" value="added first failing cucumber tests for reading GatecomFiles" />
+    <MESSAGE value="read Gatecom-Files in ANSI-Format (CodePage 1252)" />
+    <option name="LAST_COMMIT_MESSAGE" value="read Gatecom-Files in ANSI-Format (CodePage 1252)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1014,20 +969,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HabaDiggi.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/handball/habaDiggiGui/EditTeamScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/handball/habaDiggiGui/ChooseGameWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1103,7 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="88" lean-forward="false" selection-start-line="5" selection-start-column="88" selection-end-line="5" selection-end-column="88" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1126,9 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1185,7 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1214,9 +1150,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1224,7 +1157,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1232,7 +1164,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1240,7 +1171,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1248,9 +1178,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1258,10 +1185,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-          <folding>
-            <element signature="e#577#578#0" expanded="false" />
-            <element signature="e#619#620#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1269,42 +1192,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="e#465#466#0" expanded="false" />
-            <element signature="e#535#536#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dieblich/com/dieblich/handball/gatecom/GateComGameFileTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dieblich/handball/gatecom/ReadGatecomFileSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-          <folding>
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dieblich/handball/gatecom/ReadGatecomFile.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dieblich/com/dieblich/handball/gatecom/GateComGameFileTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/handball/materials/PlayerLicense.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1313,38 +1204,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/handball/gatecom/GatecomGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#99#100#0" expanded="true" />
-            <element signature="e#124#125#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/handball/gatecom/GatecomFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding>
-            <element signature="e#141#142#0" expanded="true" />
-            <element signature="e#181#182#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/handball/habaDiggiGui/EditTeamScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/handball/habaDiggiGui/EditTeamScene.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/observability/Observable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1353,12 +1213,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/handball/habaDiggiGui/EditGameParticipantsWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/handball/habaDiggiGui/EditGameParticipantsWindow.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/nio/file/Files.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="52" lean-forward="true" selection-start-line="25" selection-start-column="52" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="438">
+          <caret line="3953" column="33" lean-forward="false" selection-start-line="3953" selection-start-column="33" selection-end-line="3953" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/handball/gatecom/GatecomGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="e#157#158#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dieblich/handball/gatecom/ReadGatecomFile.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="true" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/handball/gatecom/GatecomFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dieblich/handball/gatecom/ReadGatecomFileSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="45" column="33" lean-forward="false" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+          <folding>
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#1532#1533#0" expanded="true" />
+            <element signature="e#1597#1598#0" expanded="true" />
+            <element signature="e#1704#1705#0" expanded="true" />
+            <element signature="e#1771#1772#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dieblich/handball/gatecom/GatecomException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding>
+            <element signature="e#143#144#0" expanded="true" />
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
           </folding>
         </state>
       </provider>
